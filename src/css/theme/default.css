@@ -1,0 +1,112 @@
+:root {
+    --color-font: #B7BCBD;
+    --color-sub-font: #777;
+    --color-bg: #2c323B;
+    --color-hover: #448aff;
+    --font-size-normal: 12px;
+}
+
+
+body {
+    background: #21252b;
+    color: var(--color-font);
+}
+
+/*win buttons*/
+.win-btns {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    width: 35px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    justify-content: space-around;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    -webkit-user-drag: none;
+}
+
+.win-btns .iconfont {
+    transform: scale(0.8);
+    transform-origin: center;
+}
+
+/* text input*/
+input[type=text],
+input[type=password] {
+    outline: none;
+    border: none;
+    height: 30px;
+    background: var(--color-bg);
+    color: var(--color-font);
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: 300;
+    transition: all 300ms ease-in-out;
+    width: 100%;
+    font-size: var(--font-size-normal);
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    box-shadow: 0 0 3px #ffffff;
+}
+/*edit-input*/
+.edit-input{
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    color: var(--color-font);
+}
+
+/* buttons */
+.btn-group {
+    display: flex;
+}
+
+.btn-group .button:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.btn-group .button:last-child {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.btn-group .button {
+    border-radius: 0;
+}
+
+.button {
+    border-radius: 3px;
+    background: var(--color-bg);
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    -webkit-app-region: no-drag;
+    -webkit-user-drag: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    font-weight: 500;
+    text-align: center;
+    font-size: var(--font-size-normal);
+}
+
+.button:hover {
+    background: var(--color-hover);
+    color: #ffffff;
+}
+
+.button:active {
+    background: var(--color-bg);
+    color: var(--color-font);
+}
+
+.button::selection {
+    background: transparent;
+}
